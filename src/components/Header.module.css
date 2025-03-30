@@ -11,10 +11,12 @@
   height: 3rem;
 }
 
-.header h1 {
+.header a {
+  text-decoration: none;
   color: var(--green-500);
+  cursor: pointer;
 }
 
-.header span {
+.header a span {
   color: var(--red-500);
 }

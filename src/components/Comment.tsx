@@ -28,7 +28,7 @@ export function Comment({ author, content, onDeleteComment }: CommentProps) {
       <Avatar
         inComment
         src="https://static.vecteezy.com/ti/vetor-gratis/p1/512576-icone-preto-do-glyph-do-perfil-gratis-vetor.jpg"
-      ></Avatar>
+      />
 
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>

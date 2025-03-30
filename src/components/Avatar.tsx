@@ -1,17 +1,16 @@
+import { ImgHTMLAttributes } from "react";
+
 import styles from "./Avatar.module.css";
 
-interface AvatarProps {
+interface AvatarProps extends ImgHTMLAttributes<HTMLImageElement> {
   inComment?: boolean;
-  src: string;
-  alt?: string;
 }
 
-export function Avatar({ inComment = false, src, alt }: AvatarProps) {
+export function Avatar({ inComment = false, ...props }: AvatarProps) {
   return (
     <img
       className={inComment ? styles.avatarComment : styles.avatar}
-      src={src}
-      alt={alt}
+      {...props}
     ></img>
   );
 }
